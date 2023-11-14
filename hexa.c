@@ -30,14 +30,13 @@ int print_hexa(va_list arg)
 		if (hexa[i] >= 10)
 		{
 			_putchar(hexa[i] - 10 + 'a');
-			len++;
 		}
 		else
 		{
 			_putchar(hexa[i] + 48);
-			len++;
 		}
 		i--;
+		len++;
 	}
 	return (len);
 }
@@ -72,14 +71,13 @@ int print_HEXA(va_list arg)
 		if (HEXA[i] >= 10)
 		{
 			_putchar(HEXA[i] - 10 + 'A');
-			len++;
 		}
 		else
 		{
 			_putchar(HEXA[i] + 48);
-			len++;
 		}
 		i--;
+		len++;
 	}
 	return (len);
 }
