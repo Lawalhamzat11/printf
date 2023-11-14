@@ -6,7 +6,8 @@
   */
 int print_bin(va_list arg)
 {
-	unsigned int number, binary[32];
+	unsigned int number;
+	int binary[32];
 	int i, len;
 
 	len = 0;
