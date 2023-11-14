@@ -25,5 +25,6 @@ int _strlen(string str);
 int print_mod(va_list arg);
 int print_char(va_list arg);
 int _putchar(char c);
-
+int print_rint(long integer, int len);
+int print_int(va_list arg);
 #endif
