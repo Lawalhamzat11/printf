@@ -27,7 +27,7 @@ int print_hexa(va_list arg)
 	i -= 1;
 	while (i >= 0)
 	{
-		if (hexa[i] > 10)
+		if (hexa[i] >= 10)
 		{
 			_putchar(hexa[i] - 10 + 'a');
 			len++;
@@ -69,7 +69,7 @@ int print_HEXA(va_list arg)
 	i -= 1;
 	while (i >= 0)
 	{
-		if (HEXA[i] > 10)
+		if (HEXA[i] >= 10)
 		{
 			_putchar(HEXA[i] - 10 + 'A');
 			len++;
