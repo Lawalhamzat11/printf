@@ -27,7 +27,7 @@ int print_rint(long integer, int len)
 		len++;
 	}
 	if (integer > 9)
-		len += print_rint(integer / 10, len);
+		len = print_rint(integer / 10, len);
 	_putchar((integer % 10) + 48);
-	return (len);
+	return (len + 1);
 }
