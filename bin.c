@@ -6,7 +6,7 @@
   */
 int print_bin(va_list arg)
 {
-	int number, len, binary[16];
+	int number, len, binary[32];
 	int i;
 
 	len = 0;
