@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+  * print_bin - prints binary
+  * @arg: argument to convert
+  * Return: length og binary bit ptinted
+  */
 int print_bin(va_list arg)
 {
 	int number, len, binary[16];
