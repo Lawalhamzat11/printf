@@ -17,6 +17,10 @@ int _printf(const char *format, ...)
 		{"i", print_int},
 		{"d", print_int},
 		{"b", print_bin},
+		{"u", print_uint},
+		{"o", print_oct},
+		{"x", print_hexa},
+		{"X", print_HEXA},
 		{NULL, NULL}
 	};
 
@@ -41,7 +45,7 @@ int _printf(const char *format, ...)
 				}
 				j++;
 			}
-			if (j < 6)
+			if (j < 10)
 			{
 				len += ops[j].f(arg);
 				i += 1;

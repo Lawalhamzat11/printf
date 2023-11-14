@@ -28,4 +28,10 @@ int _putchar(char c);
 int print_rint(long integer, int len);
 int print_int(va_list arg);
 int print_bin(va_list arg);
+int print_ruint(long integer, int len);
+int print_uint(va_list arg);
+int print_oct(va_list arg);
+int print_hexa(va_list arg);
+int print_HEXA(va_list arg);
+
 #endif
