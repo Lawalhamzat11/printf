@@ -31,3 +31,25 @@ int print_rint(long integer, int len)
 	_putchar((integer % 10) + 48);
 	return (len + 1);
 }
+
+int print_uint(va_list arg)
+{
+	int len;
+	unsigned int integer = va_arg(arg, unsigned int);
+
+	len = 0;
+	len += print_ruint(integer, len);
+	return (len);
+}
+
+int print_ruint(long integer, int len)
+{
+	if (integer < 0)
+	{
+		integer = -integer;
+	}
+	if (integer > 9)
+		len = print_ruint(integer / 10, len);
+	_putchar((integer % 10) + 48);
+	return (len + 1);
+}
