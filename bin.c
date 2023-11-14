@@ -13,6 +13,12 @@ int print_bin(va_list arg)
 	len = 0;
 	number = va_arg(arg, unsigned int);
 
+	if (number == 0)
+	{
+		_putchar(48);
+		return (1);
+	}
+
 	for (i = 0; number > 0; i++)
 	{
 		binary[i] = number % 2;
