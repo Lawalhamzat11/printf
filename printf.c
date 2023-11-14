@@ -16,6 +16,7 @@ int _printf(const char *format, ...)
 		{"%", print_mod},
 		{"i", print_int},
 		{"d", print_int},
+		{"b", print_bin},
 		{NULL, NULL}
 	};
 
@@ -40,7 +41,7 @@ int _printf(const char *format, ...)
 				}
 				j++;
 			}
-			if (j < 5)
+			if (j < 6)
 			{
 				len += ops[j].f(arg);
 				i += 1;
