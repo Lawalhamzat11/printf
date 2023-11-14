@@ -32,6 +32,11 @@ int print_rint(long integer, int len)
 	return (len + 1);
 }
 
+/**
+  * print_uint - prints integer unsigned
+  * @arg: arument printed
+  * Return: length prnted
+  */
 int print_uint(va_list arg)
 {
 	int len;
@@ -41,7 +46,12 @@ int print_uint(va_list arg)
 	len += print_ruint(integer, len);
 	return (len);
 }
-
+/**
+  * print_ruint - prints unsigned integer
+  * @integer: argument to print
+  * @len: length of printed unsignedinteger
+  * Return: length og the printed integer
+  */
 int print_ruint(long integer, int len)
 {
 	if (integer < 0)

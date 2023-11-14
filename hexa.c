@@ -80,7 +80,6 @@ int print_HEXA(va_list arg)
 			len++;
 		}
 		i--;
-		len++;
 	}
 	return (len);
 }
